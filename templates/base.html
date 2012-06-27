@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
 
-  <title>{% block title %}yoursite.com{% endblock %}</title>
+  <title>{% block title %}Sanjay Saraf{% endblock %}</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="A blog by Sanjay Saraf">
+  <meta name="author" content="Sanjay Saraf">
   <link rel="shortcut icon" href="/static/favicon.ico">
 
   <!-- HTML5 shim, for IE 6-8 support of HTML elements -->
@@ -16,13 +16,12 @@
   <![endif]-->
 
   <link rel="stylesheet" href="/static/css/bootstrap.css">
-  <link rel="stylesheet" href="/static/css/bootstrap-responsive.css">
+  <!--<link rel="stylesheet" href="/static/css/bootstrap-responsive.css">-->
+  <link rel="stylesheet" href="/static/css/sanjay.css">
 <!--  <link rel="stylesheet/less" href="/static/css/main.less">-->
   {% block css %}{% endblock %}
 
   <!-- Rather use `less.js` to dynamically compile your `stylesheet/less` files? -->
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.1.5/less-1.1.5.min.js"></script>
-  <script>window.less || document.write('<script src="/static/js/less.js">\x3C/script>')</script>
 
   <!-- Need Modernizr? Uncomment the following script. -->
   <!-- <script src="/static/js/modernizr.js"></script> -->
@@ -34,10 +33,38 @@
   <header>
     {% include "header.html" %}
   </header>
+  
+<div class="container-fluid">
+            <div class="sidebar">
+                <div class="span2">
+                    <header>
+                        <h1><a href="/">SANJAY SARAF</a></h1>
+                        <br />
+                        <span>Med Student</span>
+                        <ul>
+								<li><p><p><a href="/about">About Me</a></p></li>
+                                <li><p><a href="https://twitter.com/svsaraf/">Twitter</a></p></li>
+                                <li><p><a href="https://facebook.com/sanjay.saraf/">Facebook</a></p></li>
+                                <li><p><a href="https://linkedin.com/svsaraf/">LinkedIn</a></p></li>
+                                <li><p><a href="https://github.com/svsaraf/">Github</a></p></li>
+                        </ul>
+                        <span class="powered-by">
+                          Powered by <a href="http://flask.pocoo.org/">Flask</a> on <a href="http://www.heroku.com/">Heroku</a>
+                        </span>
+                    </header>
+                </div>
+            </div>
 
-  <div id="main" role="main">
-    {% block main %}{% endblock %}
+  <div class="content">
+  	<div class="row-fluid">
+  	  <div class="span9">
+  	  	<section>
+  	  	{% block main %}{% endblock %}
+  	  	</section>
+  	  </div>
+    </div>
   </div>
+</div>
 
   <footer>
     {% include "footer.html" %}

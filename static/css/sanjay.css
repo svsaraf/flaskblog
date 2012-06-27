@@ -1,0 +1,121 @@
+body {
+    background: #fff;
+    color: #222;
+}
+
+.sidebar {
+    position: fixed;
+    left:1%;
+    width:10%;
+    margin-top: 60px;
+}
+
+.content {
+    margin-left: 25%;
+    margin-top: 60px;
+}
+
+
+.container-fluid,
+.row-fluid { height: inherit; }
+
+h1,
+.expandingArea.text-title pre,
+.expandingArea.text-title textarea {
+    font-weight: 900;
+    font-size: 30px; }
+
+
+h1, h2, h3, h4, h5 {
+    font-weight: 900;
+    word-wrap: break-word;
+    line-height: 1.3em;
+}
+
+h1 {
+    font-size: 30px;
+}
+p {
+    color: #1d1d1d; }
+
+a,
+a:visited
+a:active{
+    color: #000;
+    text-decoration: none;
+}
+
+header {
+    padding: 0px 0px;
+}
+
+ul {
+    list-style-type: none; }
+
+a: hover {
+    color: red; 
+}
+
+body, pre, input {
+    line-height: 1.8em;
+    font-size: 15px;
+    font-weight: 400; }
+
+textarea {
+    font-family: 'Lato', Helvetica, sans-serif;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+
+header span {
+    color: #888;
+    font-weight: 500; }
+header span.powered-by {
+    font-size: 11px;
+}
+header ul {
+    padding: 0;
+    margin: 50px 0; }
+header li {
+    margin: 0 0 3px 0; }
+header li a {
+    padding: 2px 0;
+    color: #888;
+    font-family: "Lucida Grande", Verdana, sans-serif; }
+header li a:hover {
+    color: #444; }
+
+li p a: hover {
+	border: none;
+	text-decoration: none; !important
+	cursor: pointer;
+	color: darkblue;
+}
+
+div.span2 header {
+    font-family: "Lucida Grande", Verdana, sans-serif; !important
+}
+
+header h1 a {
+    font-family: Georgia; !important
+}
+
+li p a:hover {
+    border-style: none; !important
+}
+
+li p a {
+    font-family: "Lucida Grande", Verdana, sans-serif; !important
+}
+
+a:hover {
+	color: #005580; !important
+}
+
+header li a:hover {
+	color: #005580;
+}
