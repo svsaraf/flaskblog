@@ -39,14 +39,23 @@
                 <div class="span2">
                     <header>
                         <h1><a href="/">SANJAY SARAF</a></h1>
-                        <br />
-                        <span>Med Student</span>
                         <ul>
-								<li><p><p><a href="/about">About Me</a></p></li>
-                                <li><p><a href="https://twitter.com/svsaraf/">Twitter</a></p></li>
-                                <li><p><a href="https://facebook.com/sanjay.saraf/">Facebook</a></p></li>
-                                <li><p><a href="https://linkedin.com/svsaraf/">LinkedIn</a></p></li>
-                                <li><p><a href="https://github.com/svsaraf/">Github</a></p></li>
+                                <li><br></li>
+                                <li><span>Personal</span></li>
+                                <li><p> </p></li>
+                                <li><p><p><a href="/about">About Me</a></p></li>
+                            	<li><br></li>
+                                <li><span>Research</span></li>
+                                <li><p><p><a href="/ber">Base Excision Repair</a></p></p></li>
+                                <li><p><a href="/zdna">Z-DNA Homologous Sequences</a></p></li>
+                                <li><p><a href="/myosin">Myosin VI Bioengineering</a></p></li>
+                                <li><p><a href="/mems">Cellular Biomechanics</a></p></li>
+                                <li><br></li>
+                                <li><span>Projects</span></li>
+                                <li><p><p><a href="/folding">Protein Modeling</a></p></li>
+                                <li><p><a href="/flu">Influenza Map</a></p></li>
+                                <li><p><a href="/charger">Hand-crank iPhone charger</a></p></li>
+                                <li><p><a href="/memorybean">MemoryBean</a></p></li>
                         </ul>
                         <span class="powered-by">
                           Powered by <a href="http://flask.pocoo.org/">Flask</a> on <a href="http://www.heroku.com/">Heroku</a>
@@ -58,9 +67,14 @@
   <div class="content">
   	<div class="row-fluid">
   	  <div class="span9">
-  	  	<section>
-  	  	{% block main %}{% endblock %}
-  	  	</section>
+  	    <div class="row">
+  	      <div class="span9">
+  	      	<div class="post-header">
+  	      	  {% block mainheader %}{% endblock %}
+  	      	  {% block main %}{% endblock %}
+  	      	</div>
+  	      </div>
+  	    </div>
   	  </div>
     </div>
   </div>

@@ -7,7 +7,7 @@ body {
     position: fixed;
     left:1%;
     width:10%;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .content {
@@ -79,7 +79,7 @@ header span.powered-by {
 }
 header ul {
     padding: 0;
-    margin: 50px 0; }
+    margin: 5px 0; }
 header li {
     margin: 0 0 3px 0; }
 header li a {
@@ -97,7 +97,7 @@ li p a: hover {
 }
 
 div.span2 header {
-    font-family: "Lucida Grande", Verdana, sans-serif; !important
+    font-family: "Lucida Grande", Verdana, sans-serif; !important;
 }
 
 header h1 a {
@@ -118,4 +118,16 @@ a:hover {
 
 header li a:hover {
 	color: #005580;
+}
+
+.mainheader {
+	text-align: center;
+}
+
+ul {
+	margin-top: 5px;
+}
+
+header ul span {
+	text-decoration: underline;
 }

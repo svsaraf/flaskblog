@@ -32,6 +32,45 @@ def about():
     """Render the website's about page."""
     return render_template('about.html')
 
+@app.route('/ber/')
+def ber():
+    """Render the website's about page."""
+    return render_template('ber.html')
+
+@app.route('/zdna/')
+def zdna():
+    """Render the website's about page."""
+    return render_template('zdna.html')
+
+@app.route('/myosin/')
+def myosin():
+    """Render the website's about page."""
+    return render_template('myosin.html')
+    
+@app.route('/mems/')
+def mems():
+    """Render the website's about page."""
+    return render_template('mems.html')
+    
+@app.route('/folding/')
+def folding():
+    """Render the website's about page."""
+    return render_template('folding.html')
+    
+@app.route('/flu/')
+def flu():
+    """Render the website's about page."""
+    return render_template('flu.html')
+    
+@app.route('/charger/')
+def charger():
+    """Render the website's about page."""
+    return render_template('charger.html')
+    
+@app.route('/memorybean/')
+def memorybean():
+    """Render the website's about page."""
+    return render_template('memorybean.html')
 
 ###
 # The functions below should be applicable to all Flask apps.
@@ -51,7 +90,7 @@ def add_header(response):
     and also to cache the rendered page for 10 minutes.
     """
     response.headers['X-UA-Compatible'] = 'IE=Edge,chrome=1'
-    response.headers['Cache-Control'] = 'public, max-age=600'
+    response.headers['Cache-Control'] = 'public, max-age=60'
     return response
 
 
