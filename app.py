@@ -62,10 +62,10 @@ def flu():
     """Render the website's about page."""
     return render_template('flu.html')
     
-@app.route('/charger/')
-def charger():
+@app.route('/iphone/')
+def iphone():
     """Render the website's about page."""
-    return render_template('charger.html')
+    return render_template('iphone.html')
     
 @app.route('/memorybean/')
 def memorybean():
