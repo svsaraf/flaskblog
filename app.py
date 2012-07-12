@@ -72,6 +72,16 @@ def memorybean():
     """Render the website's about page."""
     return render_template('memorybean.html')
 
+@app.route('/research/')
+def research():
+    """Render the website's about page."""
+    return render_template('research.html')
+
+@app.route('/projects/')
+def projects():
+    """Render the website's about page."""
+    return render_template('projects.html')
+
 ###
 # The functions below should be applicable to all Flask apps.
 ###
@@ -81,6 +91,11 @@ def send_text_file(file_name):
     """Send your static text file."""
     file_dot_text = file_name + '.txt'
     return app.send_static_file(file_dot_text)
+
+@app.route('/static/<path:filename>')
+def send_image(file_name):
+    """Send images."""
+    return app.send_static_file(app.config['static'], file_name, as_attachment=False)
 
 
 @app.after_request
