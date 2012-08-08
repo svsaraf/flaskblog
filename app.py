@@ -32,46 +32,6 @@ def about():
     """Render the website's about page."""
     return render_template('about.html')
 
-@app.route('/ber/')
-def ber():
-    """Render the website's about page."""
-    return render_template('ber.html')
-
-@app.route('/zdna/')
-def zdna():
-    """Render the website's about page."""
-    return render_template('zdna.html')
-
-@app.route('/myosin/')
-def myosin():
-    """Render the website's about page."""
-    return render_template('myosin.html')
-    
-@app.route('/mems/')
-def mems():
-    """Render the website's about page."""
-    return render_template('mems.html')
-    
-@app.route('/folding/')
-def folding():
-    """Render the website's about page."""
-    return render_template('folding.html')
-    
-@app.route('/flu/')
-def flu():
-    """Render the website's about page."""
-    return render_template('flu.html')
-    
-@app.route('/iphone/')
-def iphone():
-    """Render the website's about page."""
-    return render_template('iphone.html')
-    
-@app.route('/memorybean/')
-def memorybean():
-    """Render the website's about page."""
-    return render_template('memorybean.html')
-
 @app.route('/research/')
 def research():
     """Render the website's about page."""
